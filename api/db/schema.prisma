@@ -4,8 +4,8 @@ datasource DS {
 }
 
 generator client {
-  provider      = ["sqlite", "postgresql"]
-  binaryTargets = "native"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
 }
 
 model Post {
