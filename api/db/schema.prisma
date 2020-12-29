@@ -1,10 +1,10 @@
 datasource DS {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 generator client {
-  provider      = ["sqlite", "postgresql"]
+  provider      = "postgresql"
   binaryTargets = "native"
 }
 
